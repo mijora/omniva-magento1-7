@@ -132,8 +132,10 @@
     $("input[name='shipping_method']").on('click',function(){
       if ($(this).attr('id')== "s_method_omnivalt_PARCEL_TERMINAL"){
         $(".omnivalt-parcel-terminal-list" ).show();
+        $(".omnivalt-parcel-terminal-list select").addClass('validate-select');
       } else {
         $(".omnivalt-parcel-terminal-list" ).hide();
+        $(".omnivalt-parcel-terminal-list select").removeClass('validate-select');
       }
     });
       
