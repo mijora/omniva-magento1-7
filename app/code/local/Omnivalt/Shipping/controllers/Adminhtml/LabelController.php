@@ -388,8 +388,8 @@ class Omnivalt_Shipping_Adminhtml_LabelController extends Mage_Adminhtml_Control
     $pdf->SetFont('freeserif', '', 9);
     $pdf->writeHTML($tbl, true, false, false, false, '');
     $pdf->SetFont('freeserif', '', 14);
-    $sign = __('Courier full name, signature').' ________________________________________________<br/><br/>';
-    $sign .= __('Sender full name, signature').' ________________________________________________';
+    $sign =   __('Courier full name, signature').' ________________________________________________<br/><br/>';
+    $sign .=  __('Sender full name, signature').' ________________________________________________';
     $pdf->writeHTML($sign, true, false, false, false, '');
     $pdf->Output('Omnivalt_manifest_'.date('Y-m-d H.i.s').'.pdf','D');
   }
